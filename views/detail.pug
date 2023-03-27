@@ -1,0 +1,26 @@
+extends layouts/layout.pug
+
+block content
+    .container.mt-3 
+        .row.justify-content-center 
+            .col-md-8 
+                h2 Detail Contact 
+                if !contact
+                    .alert.alert-danger.fw-bold(role='alert')
+                        | Data contact tidak ada 
+                        a.alert-link.fw-normal(href='/contact') &laquo; kembali ke daftar contact
+                        | .
+                else 
+                    .card
+                        .card-body
+                            h5.card-title
+                            | #{contact.nama}
+                            h6.card-subtitle.mb-2.text-muted
+                            | #{contact.noHP}
+                            p.card-text
+                            | #{contact.email}
+                            br
+                            a.btn.btn-info.badge(href='/contact/edit/' + contact.nama) ubah
+                            a.btn.btn-danger.badge(href='/contact/delete/' + contact.nama onclick="return confirm('yakin?');") hapus
+                            a.card-link.d-block.mt-3(href='/contact') &laquo; Kembali ke daftar contact.
+

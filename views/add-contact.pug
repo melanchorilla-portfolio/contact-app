@@ -1,0 +1,25 @@
+extends layouts/layout.pug
+
+block content
+
+    .container.mt-3
+        .row.justify-content-center
+            .col-md-6
+                h2.mb-3= title
+                if typeof errors != 'undefined'
+                    .alert.alert-danger(role='alert')
+                        ul 
+                            each error in errors
+                                li= error.msg
+        
+                form(method='post' action='/contact')
+                    .mb-3
+                        label.form-label(for='nama') Nama
+                        input#nama.form-control(type='text' name='nama' required='')
+                    .mb-3
+                        label.form-label(for='email') E-mail
+                        input#email.form-control(type='email' name='email')
+                    .mb-3
+                        label.form-label(for='noHP') No. HP
+                        input#noHP.form-control(type='number' name='noHP' required='')
+                    button.btn.btn-primary(type='submit') Add Data
