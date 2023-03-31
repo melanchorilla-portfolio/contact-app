@@ -1,6 +1,10 @@
-# Simple Contact App
+# Simple Contact App with Libraries
 
 Simple contact app built with NodeJS
+
+[![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en)
+[![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)
+
 
 ## Installation
 
