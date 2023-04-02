@@ -5,14 +5,6 @@ Simple contact app built with NodeJS
 [![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/en)
 
 
-## Installation
-
-Install contact-app with npm
-
-```bash
-  npm install 
-```
-    
 ## Tech
 
 [Simple contact app:](https://github.com/melanchorilla-portfolio/contact-app) NodeJS
